@@ -1,0 +1,36 @@
+PAQUETE-> nos ayudan a organizar los conjuntos de CLASES y nos asisten para poder compartir el codigo.
+CLASE-> la clase java es la forma esencial en la cual el lenguaje nos permite organizar nuestro codigo;
+	 dentro de las Clases se coloca los datos y codigo del programa que vamos a codificar
+METODO MAIN-> nos permite ejecutar nuestro programa
+MAIN-> es el primer subprograma que se llama cuando invoco un programa java
+METODO-> es igual a una funcion o un procedimiento, solo que es la manera de nombrar a los subprogramas que 
+	se CODIFICAN dentro de una clase.
+SCANNER-> es una CLASE que lo vamos a utilizar para leer datos por teclado que ingresa el usuario.
+	  pero debemos IMPORTARLO.
+iMPORTARLO O IMPORT-> importa la CLASE Scanner del PAQUETE Java.util
+
+como crear una variable(tomando de ej Scanner):
+1_declacar de que tipo es la variable
+2_declarar nombre de la variable
+3_asignamos a la variable un nuevo objeto
+
+System.in  -> identifica que el ingreso se hara por teclado
+System.out -> identifica la salida por pantalla
+
+concepto tomando como ej una parte del programa:
+nombre= leer.next(); -> acá estoy asignando un valor, en este caso, una cadena de caracteres a la variable 
+			nombre, pero antes explicamos "leer.next()"
+leer.next(); -> vemos que una variable, en este caso LEER va a invocar una funcion, aca seria next(), y el resultado
+		de dicha funcion se va a asignar a la variable de tipo string o cadena nombrada NOMBRE.
+next();-> es un METODO NEXT() el cual se INVOCA de la VARIABLE(OBJETO) nombrada LEER.
+
+OBJETO->?
+
+
+PAQUETE-> nos permiten ORGANIZAR los PROGRAMAS JAVA y EMPAQUETAR muchos programas con un mismo FIN
+ ej:
+
+PAQUETE	   -> egg.introjava
+PROGRAMA   -> HolaMundo.java
+CLASE      -> HolaMundo
+
