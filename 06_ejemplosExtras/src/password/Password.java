@@ -237,7 +237,9 @@ public class Password {
 //        System.out.println("contador1->" + cont);
 //        System.out.println("contador2->" + cont1);
 //        System.out.println("contador3->" + cont2);
-//         corroboro que mis  caracteres cumplan con la condicion
+
+
+        //   corroboro que mis  caracteres cumplan con la condicion
         if (cont >= 2) {
 
             bandera1 = true; // si hay al menos 2 mayus cumple con la condicion

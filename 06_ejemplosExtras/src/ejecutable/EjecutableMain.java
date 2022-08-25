@@ -25,7 +25,7 @@ public class EjecutableMain {
         for (Password i : array) {
 
             System.out.println("+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
-            System.out.println(i.getUsuario() + " Su Contraseña-> " + i.getContrasenia() + " es fuerte-> " + i.esFuerte());
+            System.out.println("Usuario: " + i.getUsuario() + " Su Contraseña es -> " + i.getContrasenia() + " es fuerte-> " + i.esFuerte());
             System.out.println("+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
 
         }
