@@ -24,24 +24,23 @@ public class Tienda {
     Scanner leer = new Scanner(System.in);
 
     //creamos un mapa de precio y valor 
-    HashMap< String,Integer> precioValor = new HashMap();
-    
+    HashMap< String, Integer> precioValor = new HashMap();
+
     //metodo menu
-    public void menu(){
-        
-         int op ;
-        
-    
+    public void menu() {
+
+        int op;
+
         System.out.println("************************");
         System.out.println(" ** Elija un Opoción ** ");
         System.out.println("************************");
-        
+
         System.out.println("1_) Ingresar Productos y Precios");
         System.out.println("2_) Mostrar  Productos y Precios");
         System.out.println("3_) Modificar Precio de Producto");
         System.out.println("4_) Borrar Producto");
         System.out.println("5_) salir");
-       
+
         do {
 
             System.out.println("************");
@@ -71,9 +70,6 @@ public class Tienda {
         } while (op != 5);
     }
 
-
-        
-
     //metodo de muestra de productos
     public void mostrarProductos() {
 
@@ -81,7 +77,7 @@ public class Tienda {
         System.out.println(" ** Tieda Doña Blanca ** ");
         System.out.println("*************************");
 
-        for (Map.Entry<String,Integer> entry : precioValor.entrySet()) {
+        for (Map.Entry<String, Integer> entry : precioValor.entrySet()) {
             System.out.println("///////////////////////////////////////////"
                     + "/////\n"
                     + "** Producto-> " + entry.getKey() + "\n"
@@ -120,46 +116,43 @@ public class Tienda {
         } while (bandera.equalsIgnoreCase("s"));
 
     }
-    
+
     //metodo de modificar hasMap
-    public void modificarPrecio(){
-        
+    public void modificarPrecio() {
+
         System.out.println("Que producto desea Modificar");
         String modificar = leer.next().toUpperCase();
-        
-        for (Map.Entry<String,Integer> entry : precioValor.entrySet()) {
-          
+
+        for (Map.Entry<String, Integer> entry : precioValor.entrySet()) {
+
             if (modificar.equalsIgnoreCase(entry.getKey())) {
-                
+
                 System.out.print("Ingrese el Nuevo Precio-> ");
                 Integer cambio = leer.nextInt();
-                
+
                 //precioValor.put(cambio, modificar);
                 precioValor.replace(modificar, cambio);
-                
-                System.out.println("El Precio de " + entry.getKey()  +
-                        " es " + entry.getValue() + "\n" );
+
+                System.out.println("El Precio de " + entry.getKey()
+                        + " es " + entry.getValue() + "\n");
             }
         }
-        
+
         //mostrarProductos();       
-                
     }
-    
+
     //METOTOD ELIMINAR PRODUCTO
-    public void borrarProducto(){
-        
+    public void borrarProducto() {
+
         System.out.println("Que Producto desea Eliminar");
         String eliminar = leer.next().toUpperCase();
-        
+
         if (precioValor.containsKey(eliminar)) {
-            
+
             precioValor.remove(eliminar);
-            
+
         }
-        
-        
-        
+
     }
 
 }

@@ -1,4 +1,3 @@
-
 package tiendaPrincipal;
 
 import tienda.Tienda;
@@ -15,7 +14,7 @@ public class TiendaMain {
     public static void main(String[] args) {
 
         Tienda tienda = new Tienda();
-        
+
         tienda.menu();
 
 //        tienda.ingresarProducto();
