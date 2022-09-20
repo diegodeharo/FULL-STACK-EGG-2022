@@ -1,0 +1,5 @@
+uml-> lenguaje modelado unificado
+
+existen 13 diagramas en 3 categorias
+
+Programa para UML -> draw.io
